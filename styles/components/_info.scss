@@ -1,0 +1,28 @@
+@import '../abstract/variaveis';
+
+#info {
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    .img-rockflower {
+        border: 6px solid $secondary-color;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .info-text {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 150px;
+        h3 {
+            color: $primary-color;
+            text-transform: uppercase;  
+        }
+        h4 {
+            color: $secondary-color;
+        }
+        p {
+            color: $primary-color;
+        }
+    }
+}

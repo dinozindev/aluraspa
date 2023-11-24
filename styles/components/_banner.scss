@@ -1,0 +1,27 @@
+@import '../abstract/variaveis';
+
+.banner {
+    background: url('../imagens/banner.jpeg') 27% center no-repeat;
+    min-height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    .inner-banner {
+        padding: 3rem;
+        background-color: $third-color;
+        text-align: center;
+        opacity: 0.9;
+        border-radius: 45px;
+        h1 {
+            font-size: $size-text;
+            color: $primary-color;
+        }
+        h2 {
+            // Não é preciso criar outra variável, basta utilizar uma operação matemática de divisão (3 dividido por 2) para alcançarmos o tamanho esperado.
+            font-size: $size-text / 2;
+            color: $secondary-color;
+        }
+    }
+}
